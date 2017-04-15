@@ -7,12 +7,49 @@
     <meta http-equiv="Pragma" content="no-cache" />
 	<title>FM TECNO</title>
 	<link rel="stylesheet" href="css/fmtecno.css?v=1.0" type="text/css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/iconmon.css" type="text/css">
 	<script type="text/javascript" src="js/fmtecno.js?v=1.0"</script> 
 	<script type="text/javascript" src="js/modernizr.js"</script>
 </head>
 <body>
-	<h1>Hola Franja Tecno</h1>
+	<header>
+		<h1>
+			<a href="index.php?action=Ingreso_Controller::login">
+				<figure>
+					<img src="img/FranjaMorada.png" alt="">
+				</figure>
+			</a>
+			<a id="fm_nav" href="index.php?action=Ingreso_Controller::login">Franja Morada Tecno</a>
+		</h1>
+		
+		<nav id="ioMenu">
+			<figure id="showMenu" class="ioMenuMovil">
+				<h3>MENU</h3>
+				
+			</figure>	
+			<div id="card_menu">
+				<figure id="hideMenu" class="ioMenuMovil">
+					<h3>CERRAR</h3>
+				</figure>
+				<figure id="logo_menu">
+					<img src="img/FranjaMorada.png" alt="">
+				</figure>
+
+				<ul>
+					<li><a href="#">Historia</a></li>
+					<li><a href="#">Contacto</a></li>
+					<li><a href="#">Clases de Consulta</a></li>
+					<li><a href="#">Logros</a></li>
+					<li><a href="#">Material</a></li>
+					<li><a href="#">Eventos</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div id="prev_section"><img src="img/flecha.png" alt=""></div>
+		<div id="next_section"><img src="img/flecha.png" alt=""></div>
+	</header>
 	
 </body>
 </html>

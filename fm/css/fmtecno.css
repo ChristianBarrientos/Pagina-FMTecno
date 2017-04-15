@@ -4,8 +4,58 @@ body{
 	position: relative;
 }
 
-@media screen and (min-width: 480px){
+header{
+	width: 100%;
+	height: 35px;
+	background: #26072C;
+	position: relative;
+ }
 
+ header h1{
+ 	display: none;
+ }
+
+ header nav{
+ 	display: none;
+ }
+
+header #prev_section,
+header #next_section{
+	width: 25px;
+	height: 25px;
+	
+	cursor: pointer;
+	margin-right: 5px;
+	/*overflow: hidden;*/
+	position: absolute;
+	top: 0px;
+}
+
+header #prev_section{
+	right: 35px;
+
+}
+
+header #next_section{
+	right: 5px;
+}
+header #next_section img,
+header #prev_section img{
+	width: 190%;
+	top: 5px;
+	left: -15px;
+	position: relative;
+}
+
+header #next_section img{
+	transform: rotate(180deg);
+}
+@media screen and (min-width: 480px){
+	body{
+	
+	background: orange;
+	
+	}
 }
 
 @media screen and (min-width: 600px){
@@ -13,7 +63,70 @@ body{
 }
 
 @media screen and (min-width: 767px){
-	
+
+	header{
+		height: 50px;
+	}
+
+	header h1{
+		display: inline-block;
+		width: 20%;
+		
+		margin: 0px;
+		height: 50px;
+		margin-left: 60px;
+		line-height: 50px;
+		min-width: 200px;
+	}
+
+	header h1 > *{
+		display: inline-block;
+		vertical-align: middle;
+		text-decoration: none;
+		color: white;
+		font-size: 0.8em; /*80% del padre, medida relativa */
+		margin: 0px 3px;
+	}
+	header h1 > a#fm_nav{
+		position: absolute;
+		width: 150px;
+		font-size: 45%;
+	}
+	header h1 figure{
+		height: 40px;
+		width: 40px;
+		margin: 0px;
+		
+	}
+
+	header h1 figure img{
+		width: 100%;
+	}
+	header #next_section,
+	header #prev_section{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		background: #700DCD;
+		right: 40px;
+		z-index: 999;
+		border-radius: 50%;
+	}
+	header #prev_section{
+		top: 115px;
+
+	}
+	header #next_section{
+		top: 190px;
+		
+	}
+	header #next_section img,
+	header #prev_section img{
+
+		width: 100%;
+		top: 10px;
+		left: 0px;
+	}
 }
 
 @media screen and (min-width: 950px){
