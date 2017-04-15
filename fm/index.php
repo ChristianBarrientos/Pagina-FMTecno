@@ -11,12 +11,12 @@
 include("include_config.php");
 
 global $config;
-if ($config["dbEngine"]=="MYSQL"){
+/*if ($config["dbEngine"]=="MYSQL"){
 	$baseDatos = new mysqli($config["dbhost"],$config["dbuser"],$config["dbpass"],$config["db"]);
 	
 	
 }
-
+*/
 
 
 //===========================================================================================================
@@ -65,46 +65,11 @@ if ($config["dbEngine"]=="MYSQL"){
 //-------------------		
 
 	$tpl->gotoBlock("_ROOT");
-	
-	
-	if (isset($_SESSION["nombre"])){
-		
-		if(!isset($_FILES["archivito"]) ){
-		
-			if($html == null){
-				//echo "htmnull";
-				$tpl->assign("contenido",Registrar_Controller::mostrar_titulos_user());
-				$tpl->printToScreen();
-			}
-			else{
-
-				$tpl->assign("contenido",$html);
-    			$tpl->printToScreen();
-			}
-			
-		}
-		else{
-			//echo "sientra";
-			//echo "estamosaca";
-			$tpl->assign("contenido",$html);
-			$tpl->printToScreen();
-		}
+    $tpl->assign("contenido",$html);
+    $tpl->printToScreen();
     	
-    	//
-    	//$webapp=$tpl->getOutputContent();
-		//echo $webapp;
-    	//$tpl->printToScreen();
-
-    }
-    else
-    {
-    	//$tpl->newBlock("loginBlock");
     	
-    	$tpl->assign("contenido",$html);
-    	$tpl->printToScreen();
-    	//$tpl->assign("menu_usuari",Ingreso_Controller::menu());
-    	
-    }
+   
     
 
 
