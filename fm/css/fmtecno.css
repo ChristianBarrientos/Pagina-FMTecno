@@ -29,6 +29,13 @@ header nav .ioMenuMovil
 	/*padding-top: 5px;*/
 	
 }
+header nav figure h3{
+	color: #9669B0;
+}
+header nav#ioMenu figure#showMenu h3 {
+	position: relative;
+	top: -10px;
+}
 header nav #card_menu{
 	position: relative;
 	height: 100%;
@@ -74,13 +81,14 @@ header nav #card_menu ul li a{
 /**************/
 header #prev_section,
 header #next_section{
-	width: 25px;
+	width: 35px;
 	height: 25px;
 	
 	cursor: pointer;
 	margin-right: 5px;
-	overflow: hidden;
+	
 	position: absolute;
+	overflow: hidden;
 	top: 0px;
 }
 
@@ -94,10 +102,11 @@ header #next_section{
 }
 header #next_section img,
 header #prev_section img{
-	width: 190%;
+	width: 110%;
 	top: 5px;
-	left: -15px;
+	left: -1px;
 	position: relative;
+
 }
 
 header #next_section img{
