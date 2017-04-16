@@ -42,3 +42,64 @@ function displayMenu(){
 	}
 
 }
+
+function displaySection(nav){
+	var section = new Array(6);
+	
+	section[0] = "inicio";
+	section[1] = "contacto";
+	section[2] = "cursos";
+	section[3] = "logros";
+	section[4] = "historia";
+	section[5] = "eventos";
+	var search;
+	var show;
+	for (var i = 0; i < 6; i++) {
+		
+		search = document.getElementById(section[i]);
+		show = search.style.display;
+		
+		if (show == "block") {
+			search.style.display = "none";
+			if (nav == "next") {
+				i = i + 1;
+				
+				if (i > 5) {
+					i = 0;
+					
+				}
+			}
+			if (nav == "prev") {
+				i--;
+				
+				if (i < 0) {
+					i = 5;
+				}
+			}
+
+			search = document.getElementById(section[i]);
+
+			search.style.display = "block";
+			
+			
+			break;
+		}
+	}
+	
+	if (section[i] == "inicio") {
+		bkgr_body = "#233D58";
+		bkgr_menu = "#233D58";
+		
+	}
+	else{
+		bkgr_body = "#f1f1f1";
+		bkgr_menu = "#29abe2";
+	}
+
+	search.style.background = bkgr_body;
+	var menu = document.getElementsByTagName("header")[0];
+	menu.style.background = bkgr_menu;
+	
+
+
+}
