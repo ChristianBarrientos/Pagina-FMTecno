@@ -8,7 +8,7 @@ body{
 header{
 	width: 100%;
 	height: 35px;
-	background: #26072C;
+	background: #233D58;
 	position: relative;
 
  }
@@ -217,7 +217,7 @@ header #next_section img{
 		position: absolute;
 		width: 50px;
 		height: 50px;
-		background: #1688A9;
+		background: #29abe2;
 		right: 40px;
 		z-index: 999;
 		border-radius: 50%;
