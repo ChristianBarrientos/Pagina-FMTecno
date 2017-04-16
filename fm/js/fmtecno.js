@@ -92,8 +92,8 @@ function displaySection(nav){
 		
 	}
 	else{
-		bkgr_body = "#f1f1f1";
-		bkgr_menu = "#29abe2";
+		bkgr_body = "#BC85D1";//"#f1f1f1";
+		bkgr_menu = "#491377";//"#29abe2";
 	}
 
 	search.style.background = bkgr_body;
@@ -126,10 +126,11 @@ function navSection(nav){
 				
 			}
 			else{
-				bkgr_body = "#f1f1f1";
-				bkgr_menu = "#29abe2";
+				bkgr_body = "#BC85D1";
+				bkgr_menu = "#491377";
 			}
 
+		
 			search.style.background = bkgr_body;
 			var menu = document.getElementsByTagName("header")[0];
 			menu.style.background = bkgr_menu;
