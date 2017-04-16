@@ -121,7 +121,7 @@ header #next_section img{
 	width: 100%;
 	position: relative;
 	height: 600px;
-	background: black;
+	
 }
 #slider section.slide{
 	position: absolute;
@@ -130,9 +130,47 @@ header #next_section img{
 	left: 0px
 }
 #slider #inicio{
-	height: 600px;
-	background: orange;
+	
+	background: #233D58;
+	/*position: relative;*/
+	text-align: center;
+	padding-bottom: 50px;
+	
 }
+#slider #inicio .mainanimation{
+	width: 100%;
+	background: red;
+	height: 300px;
+	position: absolute;
+	}
+
+#slider #inicio .mainlogo {
+	background: none;
+	position: relative;
+	background: green;
+	width: 60vw;
+	margin-left: 20vw;
+	min-height: 430px;
+	
+}
+
+#slider #inicio .mainlogo h2{
+	font-size: 1.4em;
+	padding-top: 80px;
+	color: white;
+	font-weight: lighter;
+}
+
+#slider #inicio .mainlogo strong {
+	font-size: 2em;
+	display: block;
+}
+#slider #inicio .mainlogo figure,
+#slider #inicio .mainlogo figure img{
+	width: 100%;
+	margin: 0px;
+}
+
 #slider #contacto{
 	height: 500px;
 	background: yellow;
@@ -154,10 +192,13 @@ header #next_section img{
 	background: purple;
 }
 @media screen and (min-width: 480px){
-	body{
-	
-	background: orange;
-	
+	#slider #inicio .mainlogo{
+		width: 270px;
+		left: 50%;
+		margin-left: -135px;
+	}
+	#slider #inicio .mainlogo h2{
+		font-size: 1-4em;
 	}
 }
 
